@@ -1,0 +1,12 @@
+{
+    "ID": "310c8390855a478b9f5e747a3d6d6770",
+    "ActionKeyword": "cdpl",
+    "Name": "cDPL",
+    "Description": "It means to create DPL file for Potplayer.",
+    "Author": "Zeroto521",
+    "Version": "0.0.1",
+    "Language": "python",
+    "Website": "https://github.com/Zeroto521/Wox.Plugin.cDPL",
+    "IcoPath": "assets\\favicon.ico",
+    "ExecuteFileName": "main.py"
+}
