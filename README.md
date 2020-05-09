@@ -2,10 +2,7 @@
 
 It means to create DPL file for Potplayer.
 
-## Requirements
-
-- Python3.x
-- pyperclip
+![](assets/example.png)
 
 ## Attention
 
@@ -18,3 +15,8 @@ It may be that file type is not in `mediaExtendList`(you can find it at `plugin/
 - Add this file type by yourself
 
 - Push or issue on [Github](https://github.com/Zeroto521/Wox.Plugin.cDPL)
+
+## Requirements
+
+- Python3.x
+- pyperclip
