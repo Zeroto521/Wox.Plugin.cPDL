@@ -22,6 +22,10 @@ class Main(Wox):
 
         if param:
             if os.path.exists(param):
+                # normal message
+                res_format['Title'] = "The path is not folder."
+                res_format['SubTitle'] = "Copy the Path to Clipboard."
+
                 # action message
                 action = ACTION_TEMPLATE.copy()
                 action['JsonRPCAction']['method'] = 'copy2clipboard'
@@ -30,17 +34,12 @@ class Main(Wox):
                 if os.path.isdir(param):
                     cdpl(param)
 
-                    # normal message
+                    # normal message update
                     res_format['Title'] = "Done."
                     res_format['SubTitle'] = "Open the Path."
 
+                    # normal message update
                     action['JsonRPCAction']['method'] = 'openFolder'
-                else:
-                    res_format['Title'] = "The path is not folder."
-                    res_format['SubTitle'] = "Copy the Path to Clipboard."
-            else:
-                res_format['Title'] = "The path does not exist."
-                res_format['SubTitle'] = "Copy the Path to Clipboard."
 
             res_format.update(action)
         else:
